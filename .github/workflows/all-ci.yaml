@@ -10,3 +10,7 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - uses: lirlia/check-all-ci-completion-action@3f29bf9723b77191c08f20ff7dea4b00e6fc9477
+        with:
+          loop-count: 3
+          timeout-seconds: 30
+          sleep-seconds: 1

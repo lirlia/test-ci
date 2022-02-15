@@ -1,0 +1,12 @@
+name: dummy
+on:
+  push:
+    branches:
+      - '**'        # matches every branch
+      - '!main'     # excludes main
+jobs:
+  dummy:
+    name: dummy
+    runs-on: ubuntu-20.04
+    steps:
+      - run: echo dummy
